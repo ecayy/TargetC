@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;001HelloWorld_semihosting/Debug/001HelloWorld1.elf&apos; to &apos;001HelloWorld_semihosting.elf&apos;" description="Rename resource &apos;001HelloWorld1.elf&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Debug/001HelloWorld1.elf" name="001HelloWorld_semihosting.elf" stamp="1698153871533" updateReferences="true"/>
+</session>

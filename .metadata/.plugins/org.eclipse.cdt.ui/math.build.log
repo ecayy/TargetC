@@ -1,0 +1,17 @@
+11:56:33 **** Rebuild of configuration Debug for project math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:9:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+    9 |  printf("Add : %X\n", math_add(0x0fff1111, 0x0fff1111));
+      |  ^~~~~~
+..\main.c:9:2: warning: incompatible implicit declaration of built-in function 'printf'
+..\main.c:4:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    3 | #include "math.h"
+  +++ |+#include <stdio.h>
+    4 | 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o math.o "..\\math.c" 
+gcc -o math.exe main.o math.o 
+
+11:56:34 Build Finished. 0 errors, 2 warnings. (took 709ms)
+

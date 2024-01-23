@@ -1,0 +1,30 @@
+17:48:26 **** Incremental Build of configuration Debug for project tax ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o tax.o "..\\tax.c" 
+..\tax.c: In function 'main':
+..\tax.c:7:16: error: expected ';' before 'uint64_t'
+    7 |  double taxrate
+      |                ^
+      |                ;
+    8 |  uint64_t tax = income * taxrate/100;
+      |  ~~~~~~~~       
+..\tax.c:8:26: error: 'taxrate' undeclared (first use in this function)
+    8 |  uint64_t tax = income * taxrate/100;
+      |                          ^~~~~~~
+..\tax.c:8:26: note: each undeclared identifier is reported only once for each function it appears in
+..\tax.c:12:11: warning: format '%Iu' expects argument of type 'size_t *', but argument 2 has type 'uint64_t' {aka 'long long unsigned int'} [-Wformat=]
+   12 |  scanf("%Iu",income);
+      |         ~~^  ~~~~~~
+      |           |  |
+      |           |  uint64_t {aka long long unsigned int}
+      |           unsigned int *
+..\tax.c:12:11: warning: format '%Iu' expects argument of type 'size_t *', but argument 2 has type 'uint64_t' {aka 'long long unsigned int'} [-Wformat=]
+..\tax.c:18:1: error: expected declaration or statement at end of input
+   18 | }
+      | ^
+..\tax.c:8:11: warning: variable 'tax' set but not used [-Wunused-but-set-variable]
+    8 |  uint64_t tax = income * taxrate/100;
+      |           ^~~
+
+17:48:26 Build Failed. 3 errors, 3 warnings. (took 190ms)
+

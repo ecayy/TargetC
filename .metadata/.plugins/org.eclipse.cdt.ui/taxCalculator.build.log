@@ -1,0 +1,27 @@
+16:59:11 **** Incremental Build of configuration Debug for project taxCalculator ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o tax.o "..\\tax.c" 
+..\tax.c: In function 'main':
+..\tax.c:13:11: warning: format '%lu' expects argument of type 'long unsigned int *', but argument 2 has type 'uint64_t *' {aka 'long long unsigned int *'} [-Wformat=]
+   13 |  scanf("%lu",&income);
+      |         ~~^  ~~~~~~~
+      |           |  |
+      |           |  uint64_t * {aka long long unsigned int *}
+      |           long unsigned int *
+      |         %I64u
+..\tax.c:13:11: warning: format '%lu' expects argument of type 'long unsigned int *', but argument 2 has type 'uint64_t *' {aka 'long long unsigned int *'} [-Wformat=]
+   13 |  scanf("%lu",&income);
+      |         ~~^  ~~~~~~~
+      |           |  |
+      |           |  uint64_t * {aka long long unsigned int *}
+      |           long unsigned int *
+      |         %I64u
+..\tax.c:22:1: error: expected expression before '}' token
+   22 | }
+      | ^
+..\tax.c:9:11: warning: unused variable 'tax' [-Wunused-variable]
+    9 |  uint64_t tax;
+      |           ^~~
+
+16:59:11 Build Failed. 1 errors, 3 warnings. (took 209ms)
+
